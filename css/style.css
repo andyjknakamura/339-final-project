@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', serif;
+}
+
+p {
+    font-family: 'Open sans';
+}
+
+nav {
+    font-family: 'Poppins', serif;
+}
+
+nav a {
+    display: inline-block;
+    color: #000;
+    border: solid 2px #000;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+a:hover {
+    background-color: skyblue;
+}
+
+.active {
+    background-color:deepskyblue;
+}
