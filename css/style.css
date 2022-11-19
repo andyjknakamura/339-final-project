@@ -24,4 +24,5 @@ a:hover {
 
 .active {
     background-color:deepskyblue;
+    font-weight: bold;
 }
