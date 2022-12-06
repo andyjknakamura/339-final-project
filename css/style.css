@@ -14,7 +14,7 @@ h1 {
     font-size: 2.5em;
 }
 
-p {
+p, ul, ol {
     font-family: 'Segoe UI', sans-serif;
 }
 
