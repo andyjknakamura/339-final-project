@@ -45,13 +45,13 @@ header {
     border: none;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 480px) {
     div {
         width: 45%;
     }
 }
 
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 801px) {
     div {
         width: 30%;
     }

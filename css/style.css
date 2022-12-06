@@ -1,28 +1,44 @@
 body {
-    background-image: url("windows_xp_bliss-wide.jpg");
+    background-image: url("resources/windows_xp_bliss.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+@font-face {
+    font-family: largeText;
+    src: url(resources/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: smallText;
+    src: url(resources/segoeui.ttf);
+}
+
+@font-face {
+    font-family: navText;
+    src: url(resources/Poppins-Regular.ttf);
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: largeText;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 p, ul, ol {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: smallText;
 }
 
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins', serif;
+    font-family: navText;
     background-color: #fff;
     padding: 10px 20px 10px 20px;
     border: 5px solid #3b77bc;
@@ -38,18 +54,30 @@ nav a {
     text-decoration: none;
     margin: 3px;
 }
+
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width: 100px;
+    height: 50px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip:focus, a.skip:active {
+    left: auto;
+    top: 50px;
+    z-index:999;
+}
   
-a:hover {
-    background-color: skyblue;
+a:hover, a:focus {
+    background-color: #87ceeb;
 }
 
 .active {
-    background-color:deepskyblue;
+    background-color:#00bfff;
     font-weight: bold;
-}
-
-.top {
-    display: none;
 }
 
 footer p {
@@ -61,6 +89,10 @@ footer p {
     padding: 3px;
 }
 
+.top {
+    display: none;
+}
+
 @media screen and (min-width: 480px) {
     nav {
         flex-flow: row wrap;
@@ -68,17 +100,14 @@ footer p {
         position: sticky;
         top: 0;
     }
-}
-
-@media screen and (min-width: 768px) {
-    nav a {
-        display: inline-block;
-    }
     .top {
-        display: inline-block;
+        display: flex;
         width: 100px;
     }
-    .skip {
-        width: 200px;
+}
+
+@media screen and (min-width: 801px) {
+    nav a {
+        display: inline-block;
     }
 }
