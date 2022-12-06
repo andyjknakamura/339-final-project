@@ -1,21 +1,37 @@
+body {
+    background-image: url("windows_xp_bliss-wide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', serif;
 }
 
 p {
-    font-family: 'Open sans';
+    font-family: 'Segoe UI';
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Poppins', serif;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    border: 5px solid #3b77bc;
 }
 
 nav a {
-    display: inline-block;
+    text-align: center;
+    display: block;
     color: #000;
-    border: solid 2px #000;
+    border: solid 3px #3b77bc;
+    width: 60px;
     padding: 14px 16px;
     text-decoration: none;
+    margin: 3px;
 }
   
 a:hover {
@@ -25,4 +41,38 @@ a:hover {
 .active {
     background-color:deepskyblue;
     font-weight: bold;
+}
+
+.top {
+    display: none;
+}
+
+footer p {
+    text-align: left;
+    display: block;
+    float: left;
+    width: 100%;
+    max-width: 100px;
+}
+
+@media screen and (min-width: 480px) {
+    nav {
+        flex-flow: row wrap;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav a {
+        display: inline-block;
+    }
+    .top {
+        display: inline-block;
+        width: 100px;
+    }
+    .skip {
+        width: 200px;
+    }
 }
