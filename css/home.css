@@ -4,21 +4,24 @@
     align-items: center;
 }
 
-p {
+#intro {
     text-align: center;
-    max-width: 300px;
+    max-width: 500px;
     background-color: #fff;
     border: 5px solid #3b77bc;
+    padding: 15px;
 }
 
-ul {
+ol, ul {
     width: 150px;
     background-color: #fff;
     border: 5px solid #3b77bc;
     justify-self: center;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 620px) {
     p {
         grid-column: 3 / span 2;
     }
@@ -27,15 +30,19 @@ ul {
         grid-template-columns: auto auto auto auto auto;
     }
     
-    ul:nth-child(odd) {
+    #one, #three, #five {
+        grid-column: 2 / span 2;
+    }
+    #two, #four, #six {
         grid-column: 4 / span 2;
     }
-    ul:nth-child(even) {
-        grid-column: 2 / span 2;
+
+    ul, ol {
+        align-self: stretch;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 975px) {
     .container {
         grid-template-columns: auto auto auto;
     }

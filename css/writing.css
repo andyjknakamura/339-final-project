@@ -1,21 +1,26 @@
 .container {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
 .attach {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
 }
 
 p {
     background-color: #fff;
     border: 5px solid #3b77bc;
-    padding: 3px;
-    width: 100%;
+    padding: 5px;
+    width: 95%;
+}
+
+h2 {
+    padding: 5px;
 }
 
 img {
@@ -27,18 +32,27 @@ header {
     flex: 0 0 100%;
 }
 
-@media screen and (min-width: 480px) {
+.writing {
+    background-color: #fff;
+    border: 5px solid #3b77bc;
+    padding: 3px;
+    width: 95%;
+    align-self: stretch;
+}
+
+.writing p {
+    background-color: none;
+    border: none;
+}
+
+@media screen and (min-width: 620px) {
     div {
         width: 45%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 975px) {
     div {
         width: 30%;
-    }
-    p {
-        align-self: center;
-        width: 95%;
     }
 }

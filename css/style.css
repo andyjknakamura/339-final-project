@@ -50,9 +50,10 @@ a:hover {
 footer p {
     text-align: left;
     display: block;
-    float: left;
-    width: 100%;
-    max-width: 100px;
+    max-width: 100%;
+    background-color: #fff;
+    border: 5px solid #3b77bc;
+    padding: 3px;
 }
 
 @media screen and (min-width: 480px) {
