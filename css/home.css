@@ -12,13 +12,19 @@
     padding: 15px;
 }
 
-ol, ul {
-    width: 150px;
+h2 {
+    font-size: medium;
+    padding-left: 15px;
+}
+
+div {
+    width: 75%;
     background-color: #fff;
     border: 5px solid #3b77bc;
     justify-self: center;
     padding-right: 15px;
     padding-bottom: 15px;
+    margin: 20px;
 }
 
 @media screen and (min-width: 620px) {

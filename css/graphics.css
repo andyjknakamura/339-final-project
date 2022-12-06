@@ -22,7 +22,7 @@ p {
     img {
         grid-column-end: span 2;
     }
-    #text {
+    .text {
         grid-column-end: span 4;
     }
     header {
@@ -41,11 +41,14 @@ p {
         min-width: 380px;
         min-height: 250px;
     }
-    #text {
+    .text {
         grid-column-end: span 2;
         text-overflow: clip clip;
         overflow: scroll;
         max-height: 215px;
+    }
+    .text:focus {
+        background-color: #d3d3d3;
     }
     #finalimg {
         grid-column-start: 2;
