@@ -23,7 +23,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: largeText;
-    font-weight: bold;
 }
 
 h1 {
@@ -40,19 +39,20 @@ nav {
     align-items: center;
     font-family: navText;
     background-color: #fff;
+    margin: 15px 3px 3px 3px;
     padding: 10px 20px 10px 20px;
     border: 5px solid #3b77bc;
 }
 
 nav a {
     text-align: center;
-    display: block;
     color: #000;
+    display: inline-block;
     border: solid 3px #3b77bc;
     width: 60px;
     padding: 14px 16px;
-    text-decoration: none;
     margin: 3px;
+    text-decoration: none;
 }
 
 a.skip {
@@ -107,7 +107,13 @@ footer p {
 }
 
 @media screen and (min-width: 801px) {
-    nav a {
+    nav, .top {
         display: inline-block;
+    }
+    nav {
+        width: 95%;
+    }
+    .top {
+        float: right;
     }
 }
