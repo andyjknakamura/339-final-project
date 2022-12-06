@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', 'Open sans';
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-    font-family: 'Segoe UI', 'Open sans';
+    font-family: 'Segoe UI', sans-serif;
 }
 
 nav {
